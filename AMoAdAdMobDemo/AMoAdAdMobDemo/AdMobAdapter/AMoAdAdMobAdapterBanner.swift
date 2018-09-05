@@ -2,9 +2,6 @@
 //  AMoAdAdMobAdapterBanner.swift
 //  AMoAdAdMobDemo
 //
-//  Created by 菅原 清吾 on 2018/08/28.
-//  Copyright © 2018年 com.amoad. All rights reserved.
-//
 
 import Foundation
 import UIKit
