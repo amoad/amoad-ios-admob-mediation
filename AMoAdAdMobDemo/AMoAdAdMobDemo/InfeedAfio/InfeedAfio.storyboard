@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qGb-0F-uYx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Infeed Afio View Controller-->
+        <scene sceneID="oA2-Gq-bcN">
+            <objects>
+                <viewController id="qGb-0F-uYx" customClass="InfeedAfioViewController" customModule="AMoAdAdMobDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ziE-HQ-jfa"/>
+                        <viewControllerLayoutGuide type="bottom" id="baO-FI-LOY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Zd-La-pxd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGx-gh-6V5">
+                                <rect key="frame" x="0.0" y="36" width="375" height="615"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tGx-gh-6V5" firstAttribute="leading" secondItem="6Zd-La-pxd" secondAttribute="leading" id="Q0a-J7-LRv"/>
+                            <constraint firstItem="tGx-gh-6V5" firstAttribute="top" secondItem="ziE-HQ-jfa" secondAttribute="bottom" constant="16" id="YNC-72-2ZQ"/>
+                            <constraint firstAttribute="trailing" secondItem="tGx-gh-6V5" secondAttribute="trailing" id="iTq-5S-c0s"/>
+                            <constraint firstAttribute="bottom" secondItem="tGx-gh-6V5" secondAttribute="bottom" constant="16" id="vhV-XC-uF9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adView" destination="tGx-gh-6V5" id="4Ff-3H-ITW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YyN-pS-ceX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="150"/>
+        </scene>
+    </scenes>
+</document>

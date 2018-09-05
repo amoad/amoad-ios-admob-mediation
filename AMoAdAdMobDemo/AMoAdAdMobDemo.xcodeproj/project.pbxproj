@@ -1,0 +1,1033 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1719B04BB195672A387E08D3 /* Pods_AMoAdAdMobDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37A4C9E3675D45336095189 /* Pods_AMoAdAdMobDemoUITests.framework */; };
+		6639113021392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639112F21392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift */; };
+		6639113121392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639112F21392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift */; };
+		6639113221392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639112F21392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift */; };
+		66391134213956A70059ECCF /* AfioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66391133213956A70059ECCF /* AfioView.xib */; };
+		66391135213956A70059ECCF /* AfioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66391133213956A70059ECCF /* AfioView.xib */; };
+		66391136213956A70059ECCF /* AfioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66391133213956A70059ECCF /* AfioView.xib */; };
+		66778A3021343001007A5540 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66778A2F21343001007A5540 /* GoogleMobileAds.framework */; };
+		66778A38213431F4007A5540 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66778A37213431F4007A5540 /* BannerViewController.swift */; };
+		66778A39213431F4007A5540 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66778A37213431F4007A5540 /* BannerViewController.swift */; };
+		66778A3A213431F4007A5540 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66778A37213431F4007A5540 /* BannerViewController.swift */; };
+		66778A3C21343211007A5540 /* Banner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66778A3B21343211007A5540 /* Banner.storyboard */; };
+		66778A3D21343211007A5540 /* Banner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66778A3B21343211007A5540 /* Banner.storyboard */; };
+		66778A3E21343211007A5540 /* Banner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66778A3B21343211007A5540 /* Banner.storyboard */; };
+		668BDF1F2135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF1E2135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift */; };
+		668BDF202135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF1E2135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift */; };
+		668BDF212135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF1E2135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift */; };
+		668BDF232135232800CE9F8B /* AMoAdAdMobUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF222135232800CE9F8B /* AMoAdAdMobUtil.swift */; };
+		668BDF242135232800CE9F8B /* AMoAdAdMobUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF222135232800CE9F8B /* AMoAdAdMobUtil.swift */; };
+		668BDF252135232800CE9F8B /* AMoAdAdMobUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF222135232800CE9F8B /* AMoAdAdMobUtil.swift */; };
+		668BDF272135319C00CE9F8B /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF262135319C00CE9F8B /* InterstitialViewController.swift */; };
+		668BDF282135319C00CE9F8B /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF262135319C00CE9F8B /* InterstitialViewController.swift */; };
+		668BDF292135319C00CE9F8B /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF262135319C00CE9F8B /* InterstitialViewController.swift */; };
+		668BDF2B213531B300CE9F8B /* Interstitial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF2A213531B300CE9F8B /* Interstitial.storyboard */; };
+		668BDF2C213531B300CE9F8B /* Interstitial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF2A213531B300CE9F8B /* Interstitial.storyboard */; };
+		668BDF2D213531B300CE9F8B /* Interstitial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF2A213531B300CE9F8B /* Interstitial.storyboard */; };
+		668BDF2F2135330100CE9F8B /* InfeedAfioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF2E2135330100CE9F8B /* InfeedAfioViewController.swift */; };
+		668BDF302135330100CE9F8B /* InfeedAfioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF2E2135330100CE9F8B /* InfeedAfioViewController.swift */; };
+		668BDF312135330100CE9F8B /* InfeedAfioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF2E2135330100CE9F8B /* InfeedAfioViewController.swift */; };
+		668BDF332135332700CE9F8B /* InfeedAfio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF322135332700CE9F8B /* InfeedAfio.storyboard */; };
+		668BDF342135332700CE9F8B /* InfeedAfio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF322135332700CE9F8B /* InfeedAfio.storyboard */; };
+		668BDF352135332700CE9F8B /* InfeedAfio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF322135332700CE9F8B /* InfeedAfio.storyboard */; };
+		668BDF37213533D800CE9F8B /* button_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF36213533D700CE9F8B /* button_highlighted.png */; };
+		668BDF38213533D800CE9F8B /* button_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF36213533D700CE9F8B /* button_highlighted.png */; };
+		668BDF39213533D800CE9F8B /* button_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF36213533D700CE9F8B /* button_highlighted.png */; };
+		668BDF3B213533EF00CE9F8B /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF3A213533EF00CE9F8B /* button.png */; };
+		668BDF3C213533EF00CE9F8B /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF3A213533EF00CE9F8B /* button.png */; };
+		668BDF3D213533EF00CE9F8B /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF3A213533EF00CE9F8B /* button.png */; };
+		668BDF3F2135349D00CE9F8B /* InterstitialAfioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF3E2135349D00CE9F8B /* InterstitialAfioViewController.swift */; };
+		668BDF402135349D00CE9F8B /* InterstitialAfioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF3E2135349D00CE9F8B /* InterstitialAfioViewController.swift */; };
+		668BDF412135349D00CE9F8B /* InterstitialAfioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF3E2135349D00CE9F8B /* InterstitialAfioViewController.swift */; };
+		668BDF43213534C100CE9F8B /* InterstitialAfio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF42213534C100CE9F8B /* InterstitialAfio.storyboard */; };
+		668BDF44213534C100CE9F8B /* InterstitialAfio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF42213534C100CE9F8B /* InterstitialAfio.storyboard */; };
+		668BDF45213534C100CE9F8B /* InterstitialAfio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668BDF42213534C100CE9F8B /* InterstitialAfio.storyboard */; };
+		669991982137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669991972137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift */; };
+		669991992137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669991972137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift */; };
+		6699919A2137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669991972137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift */; };
+		66AE1EDA2136805100C962C3 /* AMoAdAdMobAdapterInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE1ED92136805100C962C3 /* AMoAdAdMobAdapterInterstitial.swift */; };
+		66AE1EDB2136805100C962C3 /* AMoAdAdMobAdapterInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE1ED92136805100C962C3 /* AMoAdAdMobAdapterInterstitial.swift */; };
+		66AE1EDC2136805100C962C3 /* AMoAdAdMobAdapterInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE1ED92136805100C962C3 /* AMoAdAdMobAdapterInterstitial.swift */; };
+		66AE1EDE2136ADA700C962C3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE1EDD2136ADA700C962C3 /* Data.swift */; };
+		66AE1EDF2136ADA700C962C3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE1EDD2136ADA700C962C3 /* Data.swift */; };
+		66AE1EE02136ADA700C962C3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE1EDD2136ADA700C962C3 /* Data.swift */; };
+		66D29CCF2134181C001F285A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D29CCE2134181C001F285A /* AppDelegate.swift */; };
+		66D29CD12134181C001F285A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D29CD02134181C001F285A /* ViewController.swift */; };
+		66D29CD42134181C001F285A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D29CD22134181C001F285A /* Main.storyboard */; };
+		66D29CD62134181D001F285A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D29CD52134181D001F285A /* Assets.xcassets */; };
+		66D29CD92134181D001F285A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D29CD72134181D001F285A /* LaunchScreen.storyboard */; };
+		66D29CE42134181E001F285A /* AMoAdAdMobDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D29CE32134181E001F285A /* AMoAdAdMobDemoTests.swift */; };
+		66D29CEF2134181E001F285A /* AMoAdAdMobDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D29CEE2134181E001F285A /* AMoAdAdMobDemoUITests.swift */; };
+		66D29D1121341B1C001F285A /* amoad_close_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0121341B1B001F285A /* amoad_close_btn_h.png */; };
+		66D29D1221341B1C001F285A /* amoad_close_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0121341B1B001F285A /* amoad_close_btn_h.png */; };
+		66D29D1321341B1C001F285A /* amoad_close_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0121341B1B001F285A /* amoad_close_btn_h.png */; };
+		66D29D1421341B1C001F285A /* amoad_close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0221341B1B001F285A /* amoad_close_btn.png */; };
+		66D29D1521341B1C001F285A /* amoad_close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0221341B1B001F285A /* amoad_close_btn.png */; };
+		66D29D1621341B1C001F285A /* amoad_close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0221341B1B001F285A /* amoad_close_btn.png */; };
+		66D29D1721341B1C001F285A /* amoad_link_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0321341B1B001F285A /* amoad_link_btn.png */; };
+		66D29D1821341B1C001F285A /* amoad_link_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0321341B1B001F285A /* amoad_link_btn.png */; };
+		66D29D1921341B1C001F285A /* amoad_link_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0321341B1B001F285A /* amoad_link_btn.png */; };
+		66D29D1A21341B1C001F285A /* amoad_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0721341B1B001F285A /* amoad_panel_l.png */; };
+		66D29D1B21341B1C001F285A /* amoad_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0721341B1B001F285A /* amoad_panel_l.png */; };
+		66D29D1C21341B1C001F285A /* amoad_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0721341B1B001F285A /* amoad_panel_l.png */; };
+		66D29D1D21341B1C001F285A /* amoad_link_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0821341B1B001F285A /* amoad_link_btn_h.png */; };
+		66D29D1E21341B1C001F285A /* amoad_link_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0821341B1B001F285A /* amoad_link_btn_h.png */; };
+		66D29D1F21341B1C001F285A /* amoad_link_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0821341B1B001F285A /* amoad_link_btn_h.png */; };
+		66D29D2021341B1C001F285A /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D29D0E21341B1C001F285A /* libAMoAd.a */; };
+		66D29D2121341B1C001F285A /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D29D0E21341B1C001F285A /* libAMoAd.a */; };
+		66D29D2221341B1C001F285A /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D29D0E21341B1C001F285A /* libAMoAd.a */; };
+		66D29D2321341B1C001F285A /* amoad_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0F21341B1C001F285A /* amoad_panel.png */; };
+		66D29D2421341B1C001F285A /* amoad_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0F21341B1C001F285A /* amoad_panel.png */; };
+		66D29D2521341B1C001F285A /* amoad_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D29D0F21341B1C001F285A /* amoad_panel.png */; };
+		66D29D2821341B62001F285A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D29D2721341B62001F285A /* AdSupport.framework */; };
+		66D29D2A21341B6F001F285A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D29D2921341B6F001F285A /* AVFoundation.framework */; };
+		66D29D2C21341B7B001F285A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D29D2B21341B7B001F285A /* CoreMedia.framework */; };
+		66D29D2E21341B88001F285A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D29D2D21341B88001F285A /* ImageIO.framework */; };
+		66D29D3021341B93001F285A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D29D2F21341B92001F285A /* StoreKit.framework */; };
+		762D8B53B5861AF15C242938 /* Pods_AMoAdAdMobDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0693067394B7970A72F1DC62 /* Pods_AMoAdAdMobDemo.framework */; };
+		C361562D1C8D019181143FB3 /* Pods_AMoAdAdMobDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97609AD0A96DA8F6BC10D1C3 /* Pods_AMoAdAdMobDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66D29CE02134181E001F285A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66D29CC32134181C001F285A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66D29CCA2134181C001F285A;
+			remoteInfo = AMoAdAdMobDemo;
+		};
+		66D29CEB2134181E001F285A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66D29CC32134181C001F285A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66D29CCA2134181C001F285A;
+			remoteInfo = AMoAdAdMobDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0693067394B7970A72F1DC62 /* Pods_AMoAdAdMobDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMoAdAdMobDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F59C0D1917BD4FFDA3B5A3 /* Pods-AMoAdAdMobDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdAdMobDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMoAdAdMobDemo/Pods-AMoAdAdMobDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6639112F21392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMoAdAdMobAdapterInfeedAfio.swift; sourceTree = "<group>"; };
+		66391133213956A70059ECCF /* AfioView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AfioView.xib; sourceTree = "<group>"; };
+		66778A2F21343001007A5540 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		66778A37213431F4007A5540 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		66778A3B21343211007A5540 /* Banner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Banner.storyboard; sourceTree = "<group>"; };
+		668BDF1E2135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMoAdAdMobAdapterBanner.swift; sourceTree = "<group>"; };
+		668BDF222135232800CE9F8B /* AMoAdAdMobUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMoAdAdMobUtil.swift; sourceTree = "<group>"; };
+		668BDF262135319C00CE9F8B /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
+		668BDF2A213531B300CE9F8B /* Interstitial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interstitial.storyboard; sourceTree = "<group>"; };
+		668BDF2E2135330100CE9F8B /* InfeedAfioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfeedAfioViewController.swift; sourceTree = "<group>"; };
+		668BDF322135332700CE9F8B /* InfeedAfio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfeedAfio.storyboard; sourceTree = "<group>"; };
+		668BDF36213533D700CE9F8B /* button_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_highlighted.png; sourceTree = "<group>"; };
+		668BDF3A213533EF00CE9F8B /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		668BDF3E2135349D00CE9F8B /* InterstitialAfioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAfioViewController.swift; sourceTree = "<group>"; };
+		668BDF42213534C100CE9F8B /* InterstitialAfio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterstitialAfio.storyboard; sourceTree = "<group>"; };
+		669991972137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMoAdAdMobAdapterInterstitialAfio.swift; sourceTree = "<group>"; };
+		66AE1ED92136805100C962C3 /* AMoAdAdMobAdapterInterstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMoAdAdMobAdapterInterstitial.swift; sourceTree = "<group>"; };
+		66AE1EDD2136ADA700C962C3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		66D29CCB2134181C001F285A /* AMoAdAdMobDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdAdMobDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D29CCE2134181C001F285A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66D29CD02134181C001F285A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66D29CD32134181C001F285A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66D29CD52134181D001F285A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66D29CD82134181D001F285A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66D29CDA2134181D001F285A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66D29CDF2134181E001F285A /* AMoAdAdMobDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMoAdAdMobDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D29CE32134181E001F285A /* AMoAdAdMobDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMoAdAdMobDemoTests.swift; sourceTree = "<group>"; };
+		66D29CE52134181E001F285A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66D29CEA2134181E001F285A /* AMoAdAdMobDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMoAdAdMobDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D29CEE2134181E001F285A /* AMoAdAdMobDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMoAdAdMobDemoUITests.swift; sourceTree = "<group>"; };
+		66D29CF02134181E001F285A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66D29CFD21341B1B001F285A /* AMoAdAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdAnalytics.h; sourceTree = "<group>"; };
+		66D29CFE21341B1B001F285A /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAd.h; sourceTree = "<group>"; };
+		66D29CFF21341B1B001F285A /* AMoAdList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdList.h; sourceTree = "<group>"; };
+		66D29D0021341B1B001F285A /* AMoAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdItem.h; sourceTree = "<group>"; };
+		66D29D0121341B1B001F285A /* amoad_close_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn_h.png; sourceTree = "<group>"; };
+		66D29D0221341B1B001F285A /* amoad_close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn.png; sourceTree = "<group>"; };
+		66D29D0321341B1B001F285A /* amoad_link_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn.png; sourceTree = "<group>"; };
+		66D29D0421341B1B001F285A /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeView.h; sourceTree = "<group>"; };
+		66D29D0521341B1B001F285A /* AMoAdInterstitialVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitialVideo.h; sourceTree = "<group>"; };
+		66D29D0621341B1B001F285A /* AMoAdNativeMainVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeMainVideoView.h; sourceTree = "<group>"; };
+		66D29D0721341B1B001F285A /* amoad_panel_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel_l.png; sourceTree = "<group>"; };
+		66D29D0821341B1B001F285A /* amoad_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn_h.png; sourceTree = "<group>"; };
+		66D29D0921341B1B001F285A /* AMoAdNativePreRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativePreRoll.h; sourceTree = "<group>"; };
+		66D29D0A21341B1C001F285A /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdLogger.h; sourceTree = "<group>"; };
+		66D29D0B21341B1C001F285A /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdView.h; sourceTree = "<group>"; };
+		66D29D0C21341B1C001F285A /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdWeb.h; sourceTree = "<group>"; };
+		66D29D0D21341B1C001F285A /* AMoAdInfeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInfeed.h; sourceTree = "<group>"; };
+		66D29D0E21341B1C001F285A /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMoAd.a; sourceTree = "<group>"; };
+		66D29D0F21341B1C001F285A /* amoad_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel.png; sourceTree = "<group>"; };
+		66D29D1021341B1C001F285A /* AMoAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitial.h; sourceTree = "<group>"; };
+		66D29D2721341B62001F285A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		66D29D2921341B6F001F285A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		66D29D2B21341B7B001F285A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		66D29D2D21341B88001F285A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		66D29D2F21341B92001F285A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		66D29D3121341C6D001F285A /* AMoAdAdMobDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMoAdAdMobDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		7AF8359069167F6EF19874F5 /* Pods-AMoAdAdMobDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdAdMobDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMoAdAdMobDemo/Pods-AMoAdAdMobDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		83A720DFFDD4DAE0A12A8351 /* Pods-AMoAdAdMobDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdAdMobDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMoAdAdMobDemoTests/Pods-AMoAdAdMobDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		946BD23FB985E7EB700E470C /* Pods-AMoAdAdMobDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdAdMobDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMoAdAdMobDemoUITests/Pods-AMoAdAdMobDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		97609AD0A96DA8F6BC10D1C3 /* Pods_AMoAdAdMobDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMoAdAdMobDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF42B45DB7D10786D5AF6C4D /* Pods-AMoAdAdMobDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdAdMobDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMoAdAdMobDemoTests/Pods-AMoAdAdMobDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C432EF04FFEFC014D07A105A /* Pods-AMoAdAdMobDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdAdMobDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMoAdAdMobDemoUITests/Pods-AMoAdAdMobDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E37A4C9E3675D45336095189 /* Pods_AMoAdAdMobDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMoAdAdMobDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66D29CC82134181C001F285A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66778A3021343001007A5540 /* GoogleMobileAds.framework in Frameworks */,
+				66D29D3021341B93001F285A /* StoreKit.framework in Frameworks */,
+				66D29D2E21341B88001F285A /* ImageIO.framework in Frameworks */,
+				66D29D2C21341B7B001F285A /* CoreMedia.framework in Frameworks */,
+				66D29D2A21341B6F001F285A /* AVFoundation.framework in Frameworks */,
+				66D29D2821341B62001F285A /* AdSupport.framework in Frameworks */,
+				66D29D2021341B1C001F285A /* libAMoAd.a in Frameworks */,
+				762D8B53B5861AF15C242938 /* Pods_AMoAdAdMobDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66D29CDC2134181E001F285A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D29D2121341B1C001F285A /* libAMoAd.a in Frameworks */,
+				C361562D1C8D019181143FB3 /* Pods_AMoAdAdMobDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66D29CE72134181E001F285A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D29D2221341B1C001F285A /* libAMoAd.a in Frameworks */,
+				1719B04BB195672A387E08D3 /* Pods_AMoAdAdMobDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66778A312134312B007A5540 /* AdMobAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				668BDF1E2135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift */,
+				66AE1ED92136805100C962C3 /* AMoAdAdMobAdapterInterstitial.swift */,
+				6639112F21392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift */,
+				669991972137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift */,
+				668BDF222135232800CE9F8B /* AMoAdAdMobUtil.swift */,
+			);
+			path = AdMobAdapter;
+			sourceTree = "<group>";
+		};
+		66778A322134315A007A5540 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				66778A37213431F4007A5540 /* BannerViewController.swift */,
+				66778A3B21343211007A5540 /* Banner.storyboard */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		66778A3F2134328E007A5540 /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				668BDF262135319C00CE9F8B /* InterstitialViewController.swift */,
+				668BDF2A213531B300CE9F8B /* Interstitial.storyboard */,
+			);
+			path = Interstitial;
+			sourceTree = "<group>";
+		};
+		66778A40213432AB007A5540 /* InfeedAfio */ = {
+			isa = PBXGroup;
+			children = (
+				668BDF36213533D700CE9F8B /* button_highlighted.png */,
+				668BDF3A213533EF00CE9F8B /* button.png */,
+				668BDF2E2135330100CE9F8B /* InfeedAfioViewController.swift */,
+				668BDF322135332700CE9F8B /* InfeedAfio.storyboard */,
+				66391133213956A70059ECCF /* AfioView.xib */,
+			);
+			path = InfeedAfio;
+			sourceTree = "<group>";
+		};
+		66778A41213432BD007A5540 /* InterstitialAfio */ = {
+			isa = PBXGroup;
+			children = (
+				668BDF3E2135349D00CE9F8B /* InterstitialAfioViewController.swift */,
+				668BDF42213534C100CE9F8B /* InterstitialAfio.storyboard */,
+			);
+			path = InterstitialAfio;
+			sourceTree = "<group>";
+		};
+		66AE1EE12136AE8400C962C3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				66AE1EDD2136ADA700C962C3 /* Data.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		66D29CC22134181C001F285A = {
+			isa = PBXGroup;
+			children = (
+				66D29CCD2134181C001F285A /* AMoAdAdMobDemo */,
+				66D29CE22134181E001F285A /* AMoAdAdMobDemoTests */,
+				66D29CED2134181E001F285A /* AMoAdAdMobDemoUITests */,
+				66D29CCC2134181C001F285A /* Products */,
+				66D29D2621341B62001F285A /* Frameworks */,
+				9411D187BCD96F1A3FADB61C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		66D29CCC2134181C001F285A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66D29CCB2134181C001F285A /* AMoAdAdMobDemo.app */,
+				66D29CDF2134181E001F285A /* AMoAdAdMobDemoTests.xctest */,
+				66D29CEA2134181E001F285A /* AMoAdAdMobDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66D29CCD2134181C001F285A /* AMoAdAdMobDemo */ = {
+			isa = PBXGroup;
+			children = (
+				66D29CFC21341AA6001F285A /* AMoAdSdk */,
+				66778A312134312B007A5540 /* AdMobAdapter */,
+				66D29CCE2134181C001F285A /* AppDelegate.swift */,
+				66D29CD02134181C001F285A /* ViewController.swift */,
+				66D29CD22134181C001F285A /* Main.storyboard */,
+				66D29CD52134181D001F285A /* Assets.xcassets */,
+				66D29CD72134181D001F285A /* LaunchScreen.storyboard */,
+				66D29CDA2134181D001F285A /* Info.plist */,
+				66D29D3121341C6D001F285A /* AMoAdAdMobDemo-Bridging-Header.h */,
+				66778A322134315A007A5540 /* Banner */,
+				66778A3F2134328E007A5540 /* Interstitial */,
+				66778A40213432AB007A5540 /* InfeedAfio */,
+				66778A41213432BD007A5540 /* InterstitialAfio */,
+				66AE1EE12136AE8400C962C3 /* Utils */,
+			);
+			path = AMoAdAdMobDemo;
+			sourceTree = "<group>";
+		};
+		66D29CE22134181E001F285A /* AMoAdAdMobDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				66D29CE32134181E001F285A /* AMoAdAdMobDemoTests.swift */,
+				66D29CE52134181E001F285A /* Info.plist */,
+			);
+			path = AMoAdAdMobDemoTests;
+			sourceTree = "<group>";
+		};
+		66D29CED2134181E001F285A /* AMoAdAdMobDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66D29CEE2134181E001F285A /* AMoAdAdMobDemoUITests.swift */,
+				66D29CF02134181E001F285A /* Info.plist */,
+			);
+			path = AMoAdAdMobDemoUITests;
+			sourceTree = "<group>";
+		};
+		66D29CFC21341AA6001F285A /* AMoAdSdk */ = {
+			isa = PBXGroup;
+			children = (
+				66D29D0121341B1B001F285A /* amoad_close_btn_h.png */,
+				66D29D0221341B1B001F285A /* amoad_close_btn.png */,
+				66D29D0821341B1B001F285A /* amoad_link_btn_h.png */,
+				66D29D0321341B1B001F285A /* amoad_link_btn.png */,
+				66D29D0721341B1B001F285A /* amoad_panel_l.png */,
+				66D29D0F21341B1C001F285A /* amoad_panel.png */,
+				66D29CFE21341B1B001F285A /* AMoAd.h */,
+				66D29CFD21341B1B001F285A /* AMoAdAnalytics.h */,
+				66D29D0D21341B1C001F285A /* AMoAdInfeed.h */,
+				66D29D1021341B1C001F285A /* AMoAdInterstitial.h */,
+				66D29D0521341B1B001F285A /* AMoAdInterstitialVideo.h */,
+				66D29D0021341B1B001F285A /* AMoAdItem.h */,
+				66D29CFF21341B1B001F285A /* AMoAdList.h */,
+				66D29D0A21341B1C001F285A /* AMoAdLogger.h */,
+				66D29D0621341B1B001F285A /* AMoAdNativeMainVideoView.h */,
+				66D29D0921341B1B001F285A /* AMoAdNativePreRoll.h */,
+				66D29D0421341B1B001F285A /* AMoAdNativeView.h */,
+				66D29D0B21341B1C001F285A /* AMoAdView.h */,
+				66D29D0C21341B1C001F285A /* AMoAdWeb.h */,
+				66D29D0E21341B1C001F285A /* libAMoAd.a */,
+			);
+			path = AMoAdSdk;
+			sourceTree = "<group>";
+		};
+		66D29D2621341B62001F285A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66778A2F21343001007A5540 /* GoogleMobileAds.framework */,
+				66D29D2F21341B92001F285A /* StoreKit.framework */,
+				66D29D2D21341B88001F285A /* ImageIO.framework */,
+				66D29D2B21341B7B001F285A /* CoreMedia.framework */,
+				66D29D2921341B6F001F285A /* AVFoundation.framework */,
+				66D29D2721341B62001F285A /* AdSupport.framework */,
+				0693067394B7970A72F1DC62 /* Pods_AMoAdAdMobDemo.framework */,
+				97609AD0A96DA8F6BC10D1C3 /* Pods_AMoAdAdMobDemoTests.framework */,
+				E37A4C9E3675D45336095189 /* Pods_AMoAdAdMobDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9411D187BCD96F1A3FADB61C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AF8359069167F6EF19874F5 /* Pods-AMoAdAdMobDemo.debug.xcconfig */,
+				25F59C0D1917BD4FFDA3B5A3 /* Pods-AMoAdAdMobDemo.release.xcconfig */,
+				AF42B45DB7D10786D5AF6C4D /* Pods-AMoAdAdMobDemoTests.debug.xcconfig */,
+				83A720DFFDD4DAE0A12A8351 /* Pods-AMoAdAdMobDemoTests.release.xcconfig */,
+				C432EF04FFEFC014D07A105A /* Pods-AMoAdAdMobDemoUITests.debug.xcconfig */,
+				946BD23FB985E7EB700E470C /* Pods-AMoAdAdMobDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66D29CCA2134181C001F285A /* AMoAdAdMobDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66D29CF32134181E001F285A /* Build configuration list for PBXNativeTarget "AMoAdAdMobDemo" */;
+			buildPhases = (
+				F2BE0188424E229FC101F375 /* [CP] Check Pods Manifest.lock */,
+				66D29CC72134181C001F285A /* Sources */,
+				66D29CC82134181C001F285A /* Frameworks */,
+				66D29CC92134181C001F285A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMoAdAdMobDemo;
+			productName = AMoAdAdMobDemo;
+			productReference = 66D29CCB2134181C001F285A /* AMoAdAdMobDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66D29CDE2134181E001F285A /* AMoAdAdMobDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66D29CF62134181E001F285A /* Build configuration list for PBXNativeTarget "AMoAdAdMobDemoTests" */;
+			buildPhases = (
+				C2498E5F7A645D0C8C7D2C25 /* [CP] Check Pods Manifest.lock */,
+				66D29CDB2134181E001F285A /* Sources */,
+				66D29CDC2134181E001F285A /* Frameworks */,
+				66D29CDD2134181E001F285A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66D29CE12134181E001F285A /* PBXTargetDependency */,
+			);
+			name = AMoAdAdMobDemoTests;
+			productName = AMoAdAdMobDemoTests;
+			productReference = 66D29CDF2134181E001F285A /* AMoAdAdMobDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66D29CE92134181E001F285A /* AMoAdAdMobDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66D29CF92134181E001F285A /* Build configuration list for PBXNativeTarget "AMoAdAdMobDemoUITests" */;
+			buildPhases = (
+				8BAB4AD1E3FC2B2D3F0D4F31 /* [CP] Check Pods Manifest.lock */,
+				66D29CE62134181E001F285A /* Sources */,
+				66D29CE72134181E001F285A /* Frameworks */,
+				66D29CE82134181E001F285A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66D29CEC2134181E001F285A /* PBXTargetDependency */,
+			);
+			name = AMoAdAdMobDemoUITests;
+			productName = AMoAdAdMobDemoUITests;
+			productReference = 66D29CEA2134181E001F285A /* AMoAdAdMobDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66D29CC32134181C001F285A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = com.amoad;
+				TargetAttributes = {
+					66D29CCA2134181C001F285A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					66D29CDE2134181E001F285A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 66D29CCA2134181C001F285A;
+					};
+					66D29CE92134181E001F285A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 66D29CCA2134181C001F285A;
+					};
+				};
+			};
+			buildConfigurationList = 66D29CC62134181C001F285A /* Build configuration list for PBXProject "AMoAdAdMobDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66D29CC22134181C001F285A;
+			productRefGroup = 66D29CCC2134181C001F285A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66D29CCA2134181C001F285A /* AMoAdAdMobDemo */,
+				66D29CDE2134181E001F285A /* AMoAdAdMobDemoTests */,
+				66D29CE92134181E001F285A /* AMoAdAdMobDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66D29CC92134181C001F285A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D29D1D21341B1C001F285A /* amoad_link_btn_h.png in Resources */,
+				668BDF3B213533EF00CE9F8B /* button.png in Resources */,
+				66D29CD92134181D001F285A /* LaunchScreen.storyboard in Resources */,
+				66778A3C21343211007A5540 /* Banner.storyboard in Resources */,
+				668BDF37213533D800CE9F8B /* button_highlighted.png in Resources */,
+				66D29D1121341B1C001F285A /* amoad_close_btn_h.png in Resources */,
+				66D29D1421341B1C001F285A /* amoad_close_btn.png in Resources */,
+				66391134213956A70059ECCF /* AfioView.xib in Resources */,
+				66D29D1721341B1C001F285A /* amoad_link_btn.png in Resources */,
+				66D29CD62134181D001F285A /* Assets.xcassets in Resources */,
+				66D29CD42134181C001F285A /* Main.storyboard in Resources */,
+				66D29D2321341B1C001F285A /* amoad_panel.png in Resources */,
+				668BDF332135332700CE9F8B /* InfeedAfio.storyboard in Resources */,
+				668BDF43213534C100CE9F8B /* InterstitialAfio.storyboard in Resources */,
+				668BDF2B213531B300CE9F8B /* Interstitial.storyboard in Resources */,
+				66D29D1A21341B1C001F285A /* amoad_panel_l.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66D29CDD2134181E001F285A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D29D1B21341B1C001F285A /* amoad_panel_l.png in Resources */,
+				668BDF3C213533EF00CE9F8B /* button.png in Resources */,
+				66D29D2421341B1C001F285A /* amoad_panel.png in Resources */,
+				668BDF342135332700CE9F8B /* InfeedAfio.storyboard in Resources */,
+				66D29D1821341B1C001F285A /* amoad_link_btn.png in Resources */,
+				66391135213956A70059ECCF /* AfioView.xib in Resources */,
+				66D29D1521341B1C001F285A /* amoad_close_btn.png in Resources */,
+				668BDF2C213531B300CE9F8B /* Interstitial.storyboard in Resources */,
+				668BDF38213533D800CE9F8B /* button_highlighted.png in Resources */,
+				668BDF44213534C100CE9F8B /* InterstitialAfio.storyboard in Resources */,
+				66D29D1E21341B1C001F285A /* amoad_link_btn_h.png in Resources */,
+				66778A3D21343211007A5540 /* Banner.storyboard in Resources */,
+				66D29D1221341B1C001F285A /* amoad_close_btn_h.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66D29CE82134181E001F285A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D29D1C21341B1C001F285A /* amoad_panel_l.png in Resources */,
+				668BDF3D213533EF00CE9F8B /* button.png in Resources */,
+				66D29D2521341B1C001F285A /* amoad_panel.png in Resources */,
+				668BDF352135332700CE9F8B /* InfeedAfio.storyboard in Resources */,
+				66D29D1921341B1C001F285A /* amoad_link_btn.png in Resources */,
+				66391136213956A70059ECCF /* AfioView.xib in Resources */,
+				66D29D1621341B1C001F285A /* amoad_close_btn.png in Resources */,
+				668BDF2D213531B300CE9F8B /* Interstitial.storyboard in Resources */,
+				668BDF39213533D800CE9F8B /* button_highlighted.png in Resources */,
+				668BDF45213534C100CE9F8B /* InterstitialAfio.storyboard in Resources */,
+				66D29D1F21341B1C001F285A /* amoad_link_btn_h.png in Resources */,
+				66778A3E21343211007A5540 /* Banner.storyboard in Resources */,
+				66D29D1321341B1C001F285A /* amoad_close_btn_h.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BAB4AD1E3FC2B2D3F0D4F31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMoAdAdMobDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2498E5F7A645D0C8C7D2C25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMoAdAdMobDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2BE0188424E229FC101F375 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMoAdAdMobDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66D29CC72134181C001F285A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668BDF1F2135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift in Sources */,
+				668BDF3F2135349D00CE9F8B /* InterstitialAfioViewController.swift in Sources */,
+				66778A38213431F4007A5540 /* BannerViewController.swift in Sources */,
+				66AE1EDA2136805100C962C3 /* AMoAdAdMobAdapterInterstitial.swift in Sources */,
+				6639113021392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift in Sources */,
+				668BDF272135319C00CE9F8B /* InterstitialViewController.swift in Sources */,
+				66D29CD12134181C001F285A /* ViewController.swift in Sources */,
+				669991982137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift in Sources */,
+				668BDF2F2135330100CE9F8B /* InfeedAfioViewController.swift in Sources */,
+				66D29CCF2134181C001F285A /* AppDelegate.swift in Sources */,
+				668BDF232135232800CE9F8B /* AMoAdAdMobUtil.swift in Sources */,
+				66AE1EDE2136ADA700C962C3 /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66D29CDB2134181E001F285A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66AE1EDB2136805100C962C3 /* AMoAdAdMobAdapterInterstitial.swift in Sources */,
+				668BDF302135330100CE9F8B /* InfeedAfioViewController.swift in Sources */,
+				66778A39213431F4007A5540 /* BannerViewController.swift in Sources */,
+				6639113121392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift in Sources */,
+				668BDF202135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift in Sources */,
+				668BDF242135232800CE9F8B /* AMoAdAdMobUtil.swift in Sources */,
+				66D29CE42134181E001F285A /* AMoAdAdMobDemoTests.swift in Sources */,
+				668BDF282135319C00CE9F8B /* InterstitialViewController.swift in Sources */,
+				669991992137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift in Sources */,
+				668BDF402135349D00CE9F8B /* InterstitialAfioViewController.swift in Sources */,
+				66AE1EDF2136ADA700C962C3 /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66D29CE62134181E001F285A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66AE1EDC2136805100C962C3 /* AMoAdAdMobAdapterInterstitial.swift in Sources */,
+				668BDF312135330100CE9F8B /* InfeedAfioViewController.swift in Sources */,
+				66778A3A213431F4007A5540 /* BannerViewController.swift in Sources */,
+				6639113221392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift in Sources */,
+				668BDF212135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift in Sources */,
+				668BDF252135232800CE9F8B /* AMoAdAdMobUtil.swift in Sources */,
+				66D29CEF2134181E001F285A /* AMoAdAdMobDemoUITests.swift in Sources */,
+				668BDF292135319C00CE9F8B /* InterstitialViewController.swift in Sources */,
+				6699919A2137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift in Sources */,
+				668BDF412135349D00CE9F8B /* InterstitialAfioViewController.swift in Sources */,
+				66AE1EE02136ADA700C962C3 /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66D29CE12134181E001F285A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66D29CCA2134181C001F285A /* AMoAdAdMobDemo */;
+			targetProxy = 66D29CE02134181E001F285A /* PBXContainerItemProxy */;
+		};
+		66D29CEC2134181E001F285A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66D29CCA2134181C001F285A /* AMoAdAdMobDemo */;
+			targetProxy = 66D29CEB2134181E001F285A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66D29CD22134181C001F285A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66D29CD32134181C001F285A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66D29CD72134181D001F285A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66D29CD82134181D001F285A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66D29CF12134181E001F285A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66D29CF22134181E001F285A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66D29CF42134181E001F285A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AF8359069167F6EF19874F5 /* Pods-AMoAdAdMobDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R483GUQ2NF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks",
+				);
+				INFOPLIST_FILE = AMoAdAdMobDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdAdMobDemo/AMoAdSdk",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoad.AMoAdAdMobDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AMoAdAdMobDemo/AMoAdAdMobDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66D29CF52134181E001F285A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F59C0D1917BD4FFDA3B5A3 /* Pods-AMoAdAdMobDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R483GUQ2NF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks",
+				);
+				INFOPLIST_FILE = AMoAdAdMobDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdAdMobDemo/AMoAdSdk",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoad.AMoAdAdMobDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AMoAdAdMobDemo/AMoAdAdMobDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66D29CF72134181E001F285A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF42B45DB7D10786D5AF6C4D /* Pods-AMoAdAdMobDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R483GUQ2NF;
+				INFOPLIST_FILE = AMoAdAdMobDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdAdMobDemo/AMoAdSdk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoad.AMoAdAdMobDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMoAdAdMobDemo.app/AMoAdAdMobDemo";
+			};
+			name = Debug;
+		};
+		66D29CF82134181E001F285A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83A720DFFDD4DAE0A12A8351 /* Pods-AMoAdAdMobDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R483GUQ2NF;
+				INFOPLIST_FILE = AMoAdAdMobDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdAdMobDemo/AMoAdSdk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoad.AMoAdAdMobDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMoAdAdMobDemo.app/AMoAdAdMobDemo";
+			};
+			name = Release;
+		};
+		66D29CFA2134181E001F285A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C432EF04FFEFC014D07A105A /* Pods-AMoAdAdMobDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R483GUQ2NF;
+				INFOPLIST_FILE = AMoAdAdMobDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdAdMobDemo/AMoAdSdk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoad.AMoAdAdMobDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AMoAdAdMobDemo;
+			};
+			name = Debug;
+		};
+		66D29CFB2134181E001F285A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 946BD23FB985E7EB700E470C /* Pods-AMoAdAdMobDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R483GUQ2NF;
+				INFOPLIST_FILE = AMoAdAdMobDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdAdMobDemo/AMoAdSdk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoad.AMoAdAdMobDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AMoAdAdMobDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66D29CC62134181C001F285A /* Build configuration list for PBXProject "AMoAdAdMobDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D29CF12134181E001F285A /* Debug */,
+				66D29CF22134181E001F285A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66D29CF32134181E001F285A /* Build configuration list for PBXNativeTarget "AMoAdAdMobDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D29CF42134181E001F285A /* Debug */,
+				66D29CF52134181E001F285A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66D29CF62134181E001F285A /* Build configuration list for PBXNativeTarget "AMoAdAdMobDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D29CF72134181E001F285A /* Debug */,
+				66D29CF82134181E001F285A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66D29CF92134181E001F285A /* Build configuration list for PBXNativeTarget "AMoAdAdMobDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66D29CFA2134181E001F285A /* Debug */,
+				66D29CFB2134181E001F285A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66D29CC32134181C001F285A /* Project object */;
+}
