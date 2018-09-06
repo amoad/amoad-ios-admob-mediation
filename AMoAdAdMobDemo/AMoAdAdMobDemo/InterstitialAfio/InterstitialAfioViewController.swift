@@ -13,7 +13,6 @@ class InterstitialAfioViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -22,16 +21,8 @@ class InterstitialAfioViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func loadInterstitial(_ sender: Any) {
-        interstitialAfio = createAndLoadInterstitialAfio()
-    }
-    
     @IBAction func showInterstitial(_ sender: Any) {
-        if interstitialAfio.isReady {
-            interstitialAfio.present(fromRootViewController: self)
-        } else {
-            print("Interstitial Ad wasn't ready")
-        }
+        interstitialAfio = createAndLoadInterstitialAfio()
     }
     
     fileprivate func createAndLoadInterstitialAfio() -> GADInterstitial {
@@ -60,6 +51,11 @@ extension InterstitialAfioViewController: GADInterstitialDelegate {
     /// Tells the delegate an ad request succeeded.
     func interstitialDidReceiveAd(_ ad: GADInterstitial) {
         print("interstitialDidReceiveAd")
+        if ad.isReady {
+            ad.present(fromRootViewController: self)
+        } else {
+            print("Interstitial Afio Ad wasn't ready")
+        }
     }
     
     /// Tells the delegate an ad request failed.

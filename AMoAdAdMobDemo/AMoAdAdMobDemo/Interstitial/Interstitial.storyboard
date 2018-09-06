@@ -21,13 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jg-bq-QL0">
-                                <rect key="frame" x="170.5" y="218.5" width="34" height="30"/>
-                                <state key="normal" title="Load"/>
-                                <connections>
-                                    <action selector="loadInterstitial:" destination="9gg-SF-TY2" eventType="touchUpInside" id="T1X-Ch-3uG"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acR-30-cjw" userLabel="Show">
                                 <rect key="frame" x="168.5" y="318.5" width="38" height="30"/>
                                 <state key="normal" title="Show"/>
@@ -39,9 +32,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="acR-30-cjw" firstAttribute="centerY" secondItem="Ern-xV-PWg" secondAttribute="centerY" id="KoM-BH-97x"/>
-                            <constraint firstItem="7jg-bq-QL0" firstAttribute="centerY" secondItem="Ern-xV-PWg" secondAttribute="centerY" constant="-100" id="Mfp-z7-RGZ"/>
                             <constraint firstItem="acR-30-cjw" firstAttribute="centerX" secondItem="Ern-xV-PWg" secondAttribute="centerX" id="bsk-FA-xg7"/>
-                            <constraint firstItem="7jg-bq-QL0" firstAttribute="centerX" secondItem="Ern-xV-PWg" secondAttribute="centerX" id="iUs-jD-2GV"/>
                         </constraints>
                     </view>
                 </viewController>

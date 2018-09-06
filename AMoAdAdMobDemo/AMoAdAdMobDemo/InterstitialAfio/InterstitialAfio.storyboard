@@ -28,18 +28,9 @@
                                     <action selector="showInterstitial:" destination="0QM-Up-snD" eventType="touchUpInside" id="0i8-ng-4O2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pg7-Dd-Ylt">
-                                <rect key="frame" x="170.5" y="218.5" width="34" height="30"/>
-                                <state key="normal" title="Load"/>
-                                <connections>
-                                    <action selector="loadInterstitial:" destination="0QM-Up-snD" eventType="touchUpInside" id="TsJ-dW-IlO"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Pg7-Dd-Ylt" firstAttribute="centerX" secondItem="YWS-e9-NkB" secondAttribute="centerX" id="Dqr-5V-V09"/>
-                            <constraint firstItem="Pg7-Dd-Ylt" firstAttribute="centerY" secondItem="YWS-e9-NkB" secondAttribute="centerY" constant="-100" id="aKe-xa-UcR"/>
                             <constraint firstItem="Qbw-OW-N7P" firstAttribute="centerX" secondItem="YWS-e9-NkB" secondAttribute="centerX" id="okf-k3-S8E"/>
                             <constraint firstItem="Qbw-OW-N7P" firstAttribute="centerY" secondItem="YWS-e9-NkB" secondAttribute="centerY" id="wb5-ub-t8d"/>
                         </constraints>

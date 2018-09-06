@@ -17,7 +17,8 @@ class AMoAdAdMobAdapterBanner : NSObject, GADCustomEventBanner {
     }
     
     fileprivate func initBanner(sid: String, size: CGSize) {
-        if let amoadView = AMoAdView.init(frame: CGRect(x : 0, y : 0, width : size.width, height : size.height)) {
+        if let amoadView = AMoAdView.init() {
+            amoadView.frame.size = size
             amoadView.delegate = self
             /// 任意でpropertyの割り当てをしてください。
 //            amoadView.horizontalAlign = .center
@@ -34,7 +35,7 @@ extension AMoAdAdMobAdapterBanner : AMoAdViewDelegate {
     
     func aMoAdViewDidReceiveAd(_ amoadView: AMoAdView!) {
         print("正常に広告を受信した")
-        delegate?.customEventBanner(self, didReceiveAd: amoadView)
+//        delegate?.customEventBanner(self, didReceiveAd: amoadView)
     }
     
     func aMoAdViewDidFail(toReceiveAd amoadView: AMoAdView!, error: Error!) {
