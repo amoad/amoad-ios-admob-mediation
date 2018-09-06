@@ -51,7 +51,8 @@ class BannerViewController: UIViewController {
                                 attribute: .centerX,
                                 multiplier: 1,
                                 constant: 0)
-            ])
+            ]
+        )
     }
 
     /*
