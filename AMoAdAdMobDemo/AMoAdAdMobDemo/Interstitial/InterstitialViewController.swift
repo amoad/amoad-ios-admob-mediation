@@ -21,16 +21,8 @@ class InterstitialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func loadInterstitial(_ sender: Any) {
-        interstitial = createAndLoadInterstitial()
-    }
-    
     @IBAction func showInterstitial(_ sender: Any) {
-        if interstitial.isReady {
-            interstitial.present(fromRootViewController: self)
-        } else {
-            print("Interstitial Ad wasn't ready")
-        }
+        interstitial = createAndLoadInterstitial()
     }
     
     fileprivate func createAndLoadInterstitial() -> GADInterstitial {
@@ -59,6 +51,11 @@ extension InterstitialViewController: GADInterstitialDelegate {
     /// Tells the delegate an ad request succeeded.
     func interstitialDidReceiveAd(_ ad: GADInterstitial) {
         print("interstitialDidReceiveAd")
+        if ad.isReady {
+            ad.present(fromRootViewController: self)
+        } else {
+            print("Interstitial Ad wasn't ready")
+        }
     }
     
     /// Tells the delegate an ad request failed.

@@ -8,14 +8,13 @@ import GoogleMobileAds
 
 class InfeedAfioViewController: UIViewController {
 
-    @IBOutlet weak var adView: UIView!
     var infeedAfio: GADBannerView!
     let adUnitID = "ca-app-pub-6717685917384193/5006294535"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        createAndLoadInfeedAfio()
+        infeedAfio = createAndLoadInfeedAfio()
     }
     
     override func didReceiveMemoryWarning() {
@@ -23,22 +22,52 @@ class InfeedAfioViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    fileprivate func createAndLoadInfeedAfio() {
+    fileprivate func createAndLoadInfeedAfio() -> GADBannerView {
         infeedAfio = GADBannerView()
-        infeedAfio.frame = adView.frame
+        infeedAfio.frame = view.frame
         infeedAfio.delegate = self
         infeedAfio.adUnitID = adUnitID
         infeedAfio.rootViewController = self
         let gadRequest = GADRequest()
         gadRequest.testDevices = AppData.isSimulator ? [kGADSimulatorID] : [AppData.deviceID]
-        adView.addSubview(infeedAfio)
         infeedAfio.load(gadRequest)
+        return infeedAfio
     }
     
     fileprivate func addInfeedAfioToView(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
-        adView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-(1)-[view]-(1)-|", options:.alignAllCenterX, metrics: nil, views: ["view": bannerView]))
-        adView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(1)-[view]-(1)-|", options:.alignAllCenterY, metrics: nil, views: ["view": bannerView]))
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .width,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .width,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .height,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .height,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerY,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerY,
+                                multiplier: 1,
+                                constant: 0)
+            ]
+        )
     }
     
     /*

@@ -15,7 +15,6 @@ class BannerViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         bannerView = createAndLoadBannerView()
-        addBannerViewToView(bannerView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,7 +51,8 @@ class BannerViewController: UIViewController {
                                 attribute: .centerX,
                                 multiplier: 1,
                                 constant: 0)
-            ])
+            ]
+        )
     }
 
     /*
@@ -70,6 +70,7 @@ extension BannerViewController: GADBannerViewDelegate {
     /// Tells the delegate an ad request loaded an ad.
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {
         print("adViewDidReceiveAd")
+        addBannerViewToView(bannerView)
     }
     
     /// Tells the delegate an ad request failed.

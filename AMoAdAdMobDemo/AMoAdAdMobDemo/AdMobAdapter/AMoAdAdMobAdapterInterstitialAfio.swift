@@ -21,6 +21,8 @@ class AMoAdAdMobAdapterInterstitialAfio: NSObject, GADCustomEventInterstitial {
     func present(fromRootViewController rootViewController: UIViewController) {
         if AMoAdInterstitialVideo.sharedInstance(withSid: sid, tag: "").isLoaded {
             AMoAdInterstitialVideo.sharedInstance(withSid: sid, tag: "").show()
+        } else {
+            print("Interstitial Afio Ad wasn't loaded")
         }
     }
 

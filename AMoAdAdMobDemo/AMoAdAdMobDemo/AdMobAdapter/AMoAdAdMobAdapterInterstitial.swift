@@ -19,20 +19,24 @@ class AMoAdAdMobAdapterInterstitial: NSObject, GADCustomEventInterstitial {
     }
     
     func present(fromRootViewController rootViewController: UIViewController) {
-        AMoAdInterstitial.showAd(withSid: sid, completion: { (sid, result, err) in
-            switch result {
-            case .click:
-                print("リンクボタンがクリックされたので閉じました")
-            case .close:
-                print("閉じるボタンがクリックされたので閉じました")
-            case .closeFromApp:
-                print("既に開かれているので開きませんでした")
-            case .duplicated:
-                print("アプリから閉じられました")
-            case .failure:
-                print("広告の取得に失敗しました:\(String(describing: err))")
-            }
-        })
+        if AMoAdInterstitial.isLoadedAd(withSid: sid) {
+            AMoAdInterstitial.showAd(withSid: sid, completion: { (sid, result, err) in
+                switch result {
+                case .click:
+                    print("リンクボタンがクリックされたので閉じました")
+                case .close:
+                    print("閉じるボタンがクリックされたので閉じました")
+                case .closeFromApp:
+                    print("既に開かれているので開きませんでした")
+                case .duplicated:
+                    print("アプリから閉じられました")
+                case .failure:
+                    print("広告の取得に失敗しました:\(String(describing: err))")
+                }
+            })
+        } else {
+            print("Interstitial Ad wasn't loaded")
+        }
     }
     
     fileprivate func initInterstitial() {
