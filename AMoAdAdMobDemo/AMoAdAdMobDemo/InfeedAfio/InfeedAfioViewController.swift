@@ -15,7 +15,7 @@ class InfeedAfioViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        createAndLoadInfeedAfio()
+        infeedAfio = createAndLoadInfeedAfio()
     }
     
     override func didReceiveMemoryWarning() {
@@ -23,7 +23,7 @@ class InfeedAfioViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    fileprivate func createAndLoadInfeedAfio() {
+    fileprivate func createAndLoadInfeedAfio() -> GADBannerView {
         infeedAfio = GADBannerView()
         infeedAfio.frame = adView.frame
         infeedAfio.delegate = self
@@ -31,12 +31,13 @@ class InfeedAfioViewController: UIViewController {
         infeedAfio.rootViewController = self
         let gadRequest = GADRequest()
         gadRequest.testDevices = AppData.isSimulator ? [kGADSimulatorID] : [AppData.deviceID]
-        adView.addSubview(infeedAfio)
         infeedAfio.load(gadRequest)
+        return infeedAfio
     }
     
     fileprivate func addInfeedAfioToView(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
+        adView.addSubview(bannerView)
         adView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-(1)-[view]-(1)-|", options:.alignAllCenterX, metrics: nil, views: ["view": bannerView]))
         adView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(1)-[view]-(1)-|", options:.alignAllCenterY, metrics: nil, views: ["view": bannerView]))
     }

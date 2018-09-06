@@ -34,7 +34,7 @@ extension AMoAdAdMobAdapterBanner : AMoAdViewDelegate {
     
     func aMoAdViewDidReceiveAd(_ amoadView: AMoAdView!) {
         print("正常に広告を受信した")
-        delegate?.customEventBanner(self, didReceiveAd: amoadView)
+//        delegate?.customEventBanner(self, didReceiveAd: amoadView)
     }
     
     func aMoAdViewDidFail(toReceiveAd amoadView: AMoAdView!, error: Error!) {

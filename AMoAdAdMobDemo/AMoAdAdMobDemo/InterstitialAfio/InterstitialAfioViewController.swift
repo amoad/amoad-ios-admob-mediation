@@ -13,7 +13,6 @@ class InterstitialAfioViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -30,7 +29,7 @@ class InterstitialAfioViewController: UIViewController {
         if interstitialAfio.isReady {
             interstitialAfio.present(fromRootViewController: self)
         } else {
-            print("Interstitial Ad wasn't ready")
+            print("Interstitial Afio Ad wasn't ready")
         }
     }
     
