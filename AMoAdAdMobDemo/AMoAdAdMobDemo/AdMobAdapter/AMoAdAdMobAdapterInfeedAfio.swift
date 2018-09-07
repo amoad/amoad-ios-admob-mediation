@@ -75,5 +75,6 @@ extension AMoAdAdMobAdapterInfeedAfio {
     func amoadNativeDidClick(_ sid: String!, tag: String!, view: UIView!) {
         print("広告クリック")
         delegate?.customEventBannerWasClicked(self)
+        delegate?.customEventBannerWillLeaveApplication(self)
     }
 }
