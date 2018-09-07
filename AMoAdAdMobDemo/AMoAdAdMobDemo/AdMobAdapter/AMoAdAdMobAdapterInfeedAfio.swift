@@ -7,8 +7,7 @@ import Foundation
 import UIKit
 import GoogleMobileAds
 
-@objc(AMoAdAdMobAdapterInfeedAfio)
-class AMoAdAdMobAdapterInfeedAfio : NSObject, GADCustomEventBanner, AMoAdNativeAppDelegate {
+@objc class AMoAdAdMobAdapterInfeedAfio : NSObject, GADCustomEventBanner, AMoAdNativeAppDelegate {
     
     var delegate: GADCustomEventBannerDelegate?
     
