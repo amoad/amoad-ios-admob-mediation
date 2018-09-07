@@ -7,8 +7,7 @@ import Foundation
 import UIKit
 import GoogleMobileAds
 
-@objc(AMoAdAdMobAdapterInterstitial)
-class AMoAdAdMobAdapterInterstitial: NSObject, GADCustomEventInterstitial {
+@objc class AMoAdAdMobAdapterInterstitial: NSObject, GADCustomEventInterstitial {
     
     var delegate: GADCustomEventInterstitialDelegate?
     var sid: String?
