@@ -76,7 +76,6 @@ extension InterstitialAfioViewController: GADInterstitialDelegate {
     /// Tells the delegate the interstitial had been animated off the screen.
     func interstitialDidDismissScreen(_ ad: GADInterstitial) {
         print("interstitialDidDismissScreen")
-//        interstitialAfio = createAndLoadInterstitialAfio()
     }
     
     /// Tells the delegate that a user click will open another app
