@@ -64,8 +64,12 @@ extension AMoAdAdMobAdapterInterstitialAfio : AMoAdInterstitialVideoDelegate {
     }
     func amoadInterstitialVideoWillDismiss(_ amoadInterstitialVideo: AMoAdInterstitialVideo!) {
         print("広告を閉じた")
+        self.delegate?.customEventInterstitialWillDismiss(self)
+        self.delegate?.customEventInterstitialDidDismiss(self)
     }
     func amoadInterstitialVideoDidClickAd(_ amoadInterstitialVideo: AMoAdInterstitialVideo!) {
         print("広告がクリックされた")
+        self.delegate?.customEventInterstitialWasClicked(self)
+        self.delegate?.customEventInterstitialWillLeaveApplication(self)
     }
 }

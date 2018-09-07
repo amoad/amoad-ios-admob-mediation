@@ -40,7 +40,7 @@ extension AMoAdAdMobAdapterBanner : AMoAdViewDelegate {
     
     func aMoAdViewDidFail(toReceiveAd amoadView: AMoAdView!, error: Error!) {
         print("広告の取得に失敗した（error:\(error)）")
-        delegate?.customEventBanner(self, didFailAd: error)
+        delegate?.customEventBanner(self, didFailAd: nil)
     }
     
     func aMoAdViewDidReceiveEmptyAd(_ amoadView: AMoAdView!) {
@@ -51,6 +51,7 @@ extension AMoAdAdMobAdapterBanner : AMoAdViewDelegate {
     func aMoAdViewDidClick(_ amoadView: AMoAdView!) {
         print("広告がクリックされた")
         delegate?.customEventBannerWasClicked(self)
+        delegate?.customEventBannerWillLeaveApplication(self)
     }
     
     func aMoAdViewWillClickBack(_ amoadView: AMoAdView!) {
