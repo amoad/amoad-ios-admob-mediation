@@ -76,7 +76,7 @@ extension InterstitialViewController: GADInterstitialDelegate {
     /// Tells the delegate the interstitial had been animated off the screen.
     func interstitialDidDismissScreen(_ ad: GADInterstitial) {
         print("interstitialDidDismissScreen")
-        interstitial = createAndLoadInterstitial()
+//        interstitial = createAndLoadInterstitial()
     }
     
     /// Tells the delegate that a user click will open another app
