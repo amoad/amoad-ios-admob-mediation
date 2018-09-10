@@ -23,6 +23,7 @@ class InfeedAfioViewController: UIViewController {
     }
     
     fileprivate func createAndLoadInfeedAfio() -> GADBannerView {
+        
         infeedAfio = GADBannerView()
         infeedAfio.frame = view.frame
         infeedAfio.delegate = self
@@ -30,6 +31,16 @@ class InfeedAfioViewController: UIViewController {
         infeedAfio.rootViewController = self
         let gadRequest = GADRequest()
         gadRequest.testDevices = AppData.isSimulator ? [kGADSimulatorID] : [AppData.deviceID]
+        
+        // 広告 View を xib から生成
+        let adView = Bundle.main.loadNibNamed("AfioView", owner: nil, options: nil)?.first as! UIView
+        adView.frame.size = infeedAfio.frame.size
+
+        // 作成したadViewをcustomEventへ渡す
+        let extras = GADCustomEventExtras()
+        extras.setExtras(["adView": adView], forLabel: "InfeedAfio")
+        gadRequest.register(extras)
+        
         infeedAfio.load(gadRequest)
         return infeedAfio
     }
