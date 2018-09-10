@@ -24,9 +24,6 @@
 		668BDF1F2135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF1E2135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift */; };
 		668BDF202135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF1E2135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift */; };
 		668BDF212135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF1E2135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift */; };
-		668BDF232135232800CE9F8B /* AMoAdAdMobUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF222135232800CE9F8B /* AMoAdAdMobUtil.swift */; };
-		668BDF242135232800CE9F8B /* AMoAdAdMobUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF222135232800CE9F8B /* AMoAdAdMobUtil.swift */; };
-		668BDF252135232800CE9F8B /* AMoAdAdMobUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF222135232800CE9F8B /* AMoAdAdMobUtil.swift */; };
 		668BDF272135319C00CE9F8B /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF262135319C00CE9F8B /* InterstitialViewController.swift */; };
 		668BDF282135319C00CE9F8B /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF262135319C00CE9F8B /* InterstitialViewController.swift */; };
 		668BDF292135319C00CE9F8B /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668BDF262135319C00CE9F8B /* InterstitialViewController.swift */; };
@@ -123,7 +120,6 @@
 		66778A37213431F4007A5540 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		66778A3B21343211007A5540 /* Banner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Banner.storyboard; sourceTree = "<group>"; };
 		668BDF1E2135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMoAdAdMobAdapterBanner.swift; sourceTree = "<group>"; };
-		668BDF222135232800CE9F8B /* AMoAdAdMobUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMoAdAdMobUtil.swift; sourceTree = "<group>"; };
 		668BDF262135319C00CE9F8B /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
 		668BDF2A213531B300CE9F8B /* Interstitial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interstitial.storyboard; sourceTree = "<group>"; };
 		668BDF2E2135330100CE9F8B /* InfeedAfioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfeedAfioViewController.swift; sourceTree = "<group>"; };
@@ -227,7 +223,6 @@
 				66AE1ED92136805100C962C3 /* AMoAdAdMobAdapterInterstitial.swift */,
 				6639112F21392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift */,
 				669991972137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift */,
-				668BDF222135232800CE9F8B /* AMoAdAdMobUtil.swift */,
 			);
 			path = AdMobAdapter;
 			sourceTree = "<group>";
@@ -636,7 +631,6 @@
 				669991982137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift in Sources */,
 				668BDF2F2135330100CE9F8B /* InfeedAfioViewController.swift in Sources */,
 				66D29CCF2134181C001F285A /* AppDelegate.swift in Sources */,
-				668BDF232135232800CE9F8B /* AMoAdAdMobUtil.swift in Sources */,
 				66AE1EDE2136ADA700C962C3 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,7 +644,6 @@
 				66778A39213431F4007A5540 /* BannerViewController.swift in Sources */,
 				6639113121392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift in Sources */,
 				668BDF202135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift in Sources */,
-				668BDF242135232800CE9F8B /* AMoAdAdMobUtil.swift in Sources */,
 				66D29CE42134181E001F285A /* AMoAdAdMobDemoTests.swift in Sources */,
 				668BDF282135319C00CE9F8B /* InterstitialViewController.swift in Sources */,
 				669991992137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift in Sources */,
@@ -668,7 +661,6 @@
 				66778A3A213431F4007A5540 /* BannerViewController.swift in Sources */,
 				6639113221392C770059ECCF /* AMoAdAdMobAdapterInfeedAfio.swift in Sources */,
 				668BDF212135230400CE9F8B /* AMoAdAdMobAdapterBanner.swift in Sources */,
-				668BDF252135232800CE9F8B /* AMoAdAdMobUtil.swift in Sources */,
 				66D29CEF2134181E001F285A /* AMoAdAdMobDemoUITests.swift in Sources */,
 				668BDF292135319C00CE9F8B /* InterstitialViewController.swift in Sources */,
 				6699919A2137E7AC0010A794 /* AMoAdAdMobAdapterInterstitialAfio.swift in Sources */,

@@ -13,24 +13,26 @@ import GoogleMobileAds
     
     func requestAd(_ adSize: GADAdSize, parameter serverParameter: String?, label serverLabel: String?, request: GADCustomEventRequest) {
         AMoAdNativeViewManager.shared().setEnvStaging(true)
-        if let parameter = serverParameter {
-            if let customEventData = AMoAdAdMobUtil.extractInfeedAfioCustomEventData(parameter: parameter) {
-                initInfeedAfio(sid: customEventData.sid, file:customEventData.file, size: adSize.size)
-            }
+        guard let sid = serverParameter else {
+            print("Cannot find sid")
+            return
         }
+        guard let dic = request.additionalParameters else {
+            print("Cannot find additionalParameters")
+            return
+        }
+        guard let adView = dic["adView"] as? UIView else {
+            print("Cannot find adView")
+            return
+        }
+        initInfeedAfio(sid: sid, adView: adView)
     }
     
-    fileprivate func initInfeedAfio(sid: String, file: String, size: CGSize) {
-        
-        // 広告 View を xib から生成する
-        let view = Bundle.main.loadNibNamed(file, owner: nil, options: nil)?.first as! UIView
-        view.frame.size = size
-        
+    fileprivate func initInfeedAfio(sid: String, adView: UIView) {
         // 広告準備
         AMoAdNativeViewManager.shared().prepareAd(withSid: sid, iconPreloading: true, imagePreloading: true)
-        
         // 広告取得
-        AMoAdNativeViewManager.shared().renderAd(withSid: sid, tag: "", view: view, coder: nil, delegate: self)
+        AMoAdNativeViewManager.shared().renderAd(withSid: sid, tag: "", view: adView, coder: nil, delegate: self)
     }
 }
 
