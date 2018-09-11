@@ -9,7 +9,7 @@ import GoogleMobileAds
 class InterstitialAfioViewController: UIViewController {
 
     var interstitialAfio: GADInterstitial!
-    let adUnitID = "ca-app-pub-6717685917384193/8681444534"
+    let adUnitID = "管理画面から取得したAdUnitIDを指定してください"
 
     override func viewDidLoad() {
         super.viewDidLoad()
