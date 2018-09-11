@@ -12,7 +12,6 @@ import GoogleMobileAds
     var delegate: GADCustomEventBannerDelegate?
     
     func requestAd(_ adSize: GADAdSize, parameter serverParameter: String?, label serverLabel: String?, request: GADCustomEventRequest) {
-        AMoAdView.setEnvStaging(true)
         if let sid = serverParameter { initBanner(sid: sid, size: adSize.size) }
     }
     
