@@ -1,1 +1,1 @@
-# amoad-ios-admob-mediation
+# ultima-ios-admob-mediation
