@@ -1,0 +1,1 @@
+# amoad-ios-admob-mediation
