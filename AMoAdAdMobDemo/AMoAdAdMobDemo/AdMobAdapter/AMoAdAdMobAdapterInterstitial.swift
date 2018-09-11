@@ -13,9 +13,10 @@ import GoogleMobileAds
     var sid: String?
     
     func requestAd(withParameter serverParameter: String?, label serverLabel: String?, request: GADCustomEventRequest) {
-        AMoAdView.setEnvStaging(true)
-        sid = serverParameter
-        if let _ = sid { initInterstitial() }
+        if let sid = serverParameter {
+            self.sid = sid
+            initInterstitial()
+        }
     }
     
     func present(fromRootViewController rootViewController: UIViewController) {

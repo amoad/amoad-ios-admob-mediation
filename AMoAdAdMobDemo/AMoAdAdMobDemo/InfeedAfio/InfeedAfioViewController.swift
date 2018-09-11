@@ -9,7 +9,7 @@ import GoogleMobileAds
 class InfeedAfioViewController: UIViewController {
 
     var infeedAfio: GADBannerView!
-    let adUnitID = "ca-app-pub-6717685917384193/5006294535"
+    let adUnitID = "管理画面から取得したAdUnitIDを指定してください"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,9 @@ class InfeedAfioViewController: UIViewController {
 
         // 作成したadViewをcustomEventへ渡す
         let extras = GADCustomEventExtras()
-        extras.setExtras(["adView": adView], forLabel: "InfeedAfio")
+        // setExtrasのkeyには"adView"を指定してください
+        // forLabelには管理画面で作成したcustomEventのlabel名を入力してください
+        extras.setExtras(["adView": adView], forLabel: "customEventのlabel名を指定してください")
         gadRequest.register(extras)
         
         infeedAfio.load(gadRequest)

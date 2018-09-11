@@ -9,7 +9,7 @@ import GoogleMobileAds
 class BannerViewController: UIViewController {
 
     var bannerView: GADBannerView!
-    let adUnitID = "ca-app-pub-6717685917384193/9448394004"
+    let adUnitID = "管理画面から取得したAdUnitIDを指定してください"
     
     override func viewDidLoad() {
         super.viewDidLoad()

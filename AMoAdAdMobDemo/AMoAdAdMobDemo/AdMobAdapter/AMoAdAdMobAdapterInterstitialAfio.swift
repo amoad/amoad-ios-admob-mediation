@@ -13,9 +13,10 @@ import GoogleMobileAds
     var sid: String?
     
     func requestAd(withParameter serverParameter: String?, label serverLabel: String?, request: GADCustomEventRequest) {
-        AMoAdNativeViewManager.shared().setEnvStaging(true)
-        sid = serverParameter
-        if let _ = sid { initInterstitialAfio() }
+        if let sid = serverParameter {
+            self.sid = sid
+            initInterstitialAfio()
+        }
     }
     
     func present(fromRootViewController rootViewController: UIViewController) {
@@ -28,8 +29,7 @@ import GoogleMobileAds
 
     fileprivate func initInterstitialAfio() {
         AMoAdInterstitialVideo.sharedInstance(withSid: sid, tag: "").delegate = self
-        /// 任意でpropertyの割り当てをしてください。
-//        AMoAdInterstitialVideo.sharedInstance(withSid: sid, tag: "").isCancellable = false
+//        AMoAdInterstitialVideo.sharedInstance(withSid: sid, tag: "").isCancellable = false // 任意でisCancellableの割り当てをしてください。
         AMoAdInterstitialVideo.sharedInstance(withSid: sid, tag: "").load()
     }
 }

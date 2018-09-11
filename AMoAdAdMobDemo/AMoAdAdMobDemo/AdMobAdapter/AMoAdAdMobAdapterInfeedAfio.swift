@@ -12,7 +12,6 @@ import GoogleMobileAds
     var delegate: GADCustomEventBannerDelegate?
     
     func requestAd(_ adSize: GADAdSize, parameter serverParameter: String?, label serverLabel: String?, request: GADCustomEventRequest) {
-        AMoAdNativeViewManager.shared().setEnvStaging(true)
         guard let sid = serverParameter else {
             print("Cannot find sid")
             return
@@ -29,9 +28,8 @@ import GoogleMobileAds
     }
     
     fileprivate func initInfeedAfio(sid: String, adView: UIView) {
-        // 広告準備
+        // 広告準備・取得
         AMoAdNativeViewManager.shared().prepareAd(withSid: sid, iconPreloading: true, imagePreloading: true)
-        // 広告取得
         AMoAdNativeViewManager.shared().renderAd(withSid: sid, tag: "", view: adView, coder: nil, delegate: self)
     }
 }

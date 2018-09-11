@@ -25,7 +25,7 @@ struct TopList {
 }
 
 struct AppData {
-    static let appID = "ca-app-pub-6717685917384193~5253998125"
-    static let deviceID = "fd6605cb61ccc72e33dc27a6836c392c"
-    static let isSimulator = false
+    static let appID = "管理画面から取得したアプリIDを指定してください"
+    static let deviceID = "Test用に端末毎のIDを指定してください"
+    static let isSimulator = false // simulatorの場合はtrue 実機の場合はfalseを指定してください
 }
