@@ -38,7 +38,7 @@ extension AMoAdAdMobAdapterBanner : AMoAdViewDelegate {
     }
     
     func aMoAdViewDidFail(toReceiveAd amoadView: AMoAdView!, error: Error!) {
-        print("広告の取得に失敗した（error:\(error)")
+        print("広告の取得に失敗した（error:\(String(describing: error))")
         delegate?.customEventBanner(self, didFailAd: nil)
     }
     
