@@ -52,7 +52,7 @@ import GoogleMobileAds
     
     fileprivate func initInterstitial() {
         AMoAdInterstitial.registerAd(withSid: sid)
-//        AMoAdInterstitial.setAutoReloadWithSid(sid, autoReload: false) // 任意でautoReloadの割り当てをしてください。
+        //        AMoAdInterstitial.setAutoReloadWithSid(sid, autoReload: false) // 任意でautoReloadの割り当てをしてください。
         AMoAdInterstitial.loadAd(withSid: sid) { (sid, result, err) in
             switch result {
             case .success:

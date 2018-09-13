@@ -20,10 +20,10 @@ import GoogleMobileAds
             amoadView.frame.size = size
             amoadView.delegate = self
             /// 任意でpropertyの割り当てをしてください。
-//            amoadView.horizontalAlign = .center
-//            amoadView.verticalAlign = .bottom
-//            amoadView.rotateTransition = .flipFromLeft
-//            amoadView.clickTransition = .jump
+            //            amoadView.horizontalAlign = .center
+            //            amoadView.verticalAlign = .bottom
+            //            amoadView.rotateTransition = .flipFromLeft
+            //            amoadView.clickTransition = .jump
             amoadView.sid = sid
             delegate?.customEventBanner(self, didReceiveAd: amoadView)
         }
@@ -34,11 +34,11 @@ extension AMoAdAdMobAdapterBanner : AMoAdViewDelegate {
     
     func aMoAdViewDidReceiveAd(_ amoadView: AMoAdView!) {
         print("正常に広告を受信した")
-//        delegate?.customEventBanner(self, didReceiveAd: amoadView)
+        //        delegate?.customEventBanner(self, didReceiveAd: amoadView)
     }
     
     func aMoAdViewDidFail(toReceiveAd amoadView: AMoAdView!, error: Error!) {
-        print("広告の取得に失敗した（error:\(error)")
+        print("広告の取得に失敗した（error:\(String(describing: error))")
         delegate?.customEventBanner(self, didFailAd: nil)
     }
     

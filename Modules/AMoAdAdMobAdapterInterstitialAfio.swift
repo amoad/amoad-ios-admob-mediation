@@ -26,10 +26,10 @@ import GoogleMobileAds
             print("Interstitial Afio Ad wasn't loaded")
         }
     }
-
+    
     fileprivate func initInterstitialAfio() {
         AMoAdInterstitialVideo.sharedInstance(withSid: sid, tag: "").delegate = self
-//        AMoAdInterstitialVideo.sharedInstance(withSid: sid, tag: "").isCancellable = false // 任意でisCancellableの割り当てをしてください。
+        //        AMoAdInterstitialVideo.sharedInstance(withSid: sid, tag: "").isCancellable = false // 任意でisCancellableの割り当てをしてください。
         AMoAdInterstitialVideo.sharedInstance(withSid: sid, tag: "").load()
     }
 }
