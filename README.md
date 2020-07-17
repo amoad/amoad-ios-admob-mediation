@@ -12,5 +12,6 @@ AdMob Mediation向けのアダプターの一般公開を終了しました。
   - AdMob Mediation向けのアダプターの一般公開を終了しました。
 
 ## その他
+
 - [AMoAd iOS SDK](https://github.com/amoad/amoad-ios-sdk)
 - [AMoAd Android SDK](https://github.com/amoad/amoad-android-sdk)
