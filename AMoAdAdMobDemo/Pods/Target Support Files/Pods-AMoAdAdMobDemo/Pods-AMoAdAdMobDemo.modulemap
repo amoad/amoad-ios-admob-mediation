@@ -1,6 +1,0 @@
-framework module Pods_AMoAdAdMobDemo {
-  umbrella header "Pods-AMoAdAdMobDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}
